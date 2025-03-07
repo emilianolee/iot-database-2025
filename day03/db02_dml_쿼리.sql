@@ -23,7 +23,7 @@ SELECT bookid, bookname, publisher, price
   FROM Imported_Book;
 
 INSERT INTO Imported_Book (bookid, bookname, publisher, price)
-VALUE (21, 'Zen Golf', 'Pearson', 12000),
+VALUES (21, 'Zen Golf', 'Pearson', 12000),
 	  (22, 'Soccer Skills', 'Human Kinetics', 15000);
 
 -- 추가. 테이블의 숫자형 타입으로 된 PK값이 자동으로 증가하도록 만들고 사용하려면...

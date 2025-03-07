@@ -33,7 +33,7 @@ SELECT bookname AS '제목'
 -- 4-6 : 고객 중 성이 같은 사람이 몇 명이나 되는지 성(姓)별 인원 수를 구하시오.
 -- SUBSTR(원본 문자열, 시작 인덱스, 길이)
 -- DB는 인덱스를 1부터 시작 (프로그래밍 언어와 차이점)
-SELECT SUBSTR('이현호', 1, 1); -- 연습이 필요
+SELECT SUBSTR('이예찬', 1, 1); -- 연습이 필요
 
 SELECT SUBSTR(name, 1, 1) AS '성씨 구분'
 	 , COUNT(*) AS '인원 수'
@@ -46,7 +46,7 @@ SELECT CONCAT('--', LTRIM('     HELLO!     '), '--');
 SELECT CONCAT('--', RTRIM('     HELLO!     '), '--');
 
 -- 새롭게 추가된 TRIM() 함수
-SELECT TRIM('=' FROM '=== - HELLO- ====');
+SELECT TRIM('=' FROM '=== - HELLO - ====');
 
 -- 날짜, 시간 함수
 SELECT SYSDATE(); -- Docker 서버시간을 따라서 GMT(그리니치 표준시)를 따름 +9hour
